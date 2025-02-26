@@ -1,0 +1,7 @@
+.background {
+    background-image: url('./assets/18筹委合照.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vh;
+}
