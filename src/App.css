@@ -1,4 +1,4 @@
-body {
+/* body {
     background-image: url('./assets/18筹委合照.png');
     background-size: cover;
     background-position: center;
@@ -8,4 +8,4 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden; /* Optional: Prevents scrolling */
-}
+ 
