@@ -1,0 +1,20 @@
+.jiujiu-img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    object-fit: contain;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.image-wrapper {
+    text-align: center;
+    padding: 20px;
+}
+
+.jiujiu-img:hover {
+    width: 600px;
+    height: 600px;
+    cursor: pointer;
+}

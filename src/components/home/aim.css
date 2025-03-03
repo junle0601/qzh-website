@@ -1,0 +1,75 @@
+.wrapper-aim {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container-aim  {
+    position: relative;
+    color: #fff;
+    width: 540px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid #315FA7;
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-aim::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255,0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.preview-text-aim {
+    position: absolute;
+    top: 120px;
+    bottom: 50px;
+    right: 220px;
+    padding-left: 30px;
+    font-size: 50px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.card-container-aim:hover::before{
+    filter: brightness(0.5);
+    /* opacity: 0.5; */
+}
+
+.card-container-aim:hover .preview-text-aim{
+    transform: translateY(-110px) translateX(-220px);
+    font-size: 35px;
+}
+
+.text-wrapper-aim {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 30px;
+    font-size: 20px;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.card-container-aim:hover .text-wrapper-aim {
+    opacity: 1;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

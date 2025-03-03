@@ -1,0 +1,67 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container  {
+    position: relative;
+    color: #fff;
+    width: 540px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/IMG_7736.JPG");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.preview-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    font-size: 50px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.card-container:hover::before{
+    filter: brightness(0.5);
+    /* opacity: 0.5; */
+}
+
+.card-container:hover .preview-text{
+    transform: translateY(-50px);
+}
+
+.text-wrapper {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    padding: 30px;
+    font-size: 20px;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.card-container:hover .text-wrapper {
+    opacity: 1;
+}

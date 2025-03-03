@@ -4,11 +4,14 @@ import './App.css';
 import Home from "./components/home/Home";
 import Pages from "./components/pages/Pages";
 import Header from "./components/common/Header";
+import cardContainer from "./components/home/card-container";
+import Aim from "./components/home/aim";
+import JiuJiu from "./components/home/jiujiu";
+import "./App.css";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom" 
 
 function App(){ 
@@ -32,12 +35,10 @@ const handleSelectItem = (item: string) => {
     <Router>
       <Header/>
       <Routes>
-
+      <Route path="/" Component={JiuJiu}></Route>
       </Routes>
     </Router>
-    <Home></Home>
-    <Pages></Pages>
-
+    
     </>
 }
 
