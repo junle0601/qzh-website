@@ -4,6 +4,8 @@ import Typewriter from "typewriter-effect"
 import Header from "../common/Header";
 import CardContainer from './card-container';
 import Aim from './aim';
+import Modal from '../Modal/Modal';
+import Zhuti from '../Modal/Zhuti';
 import "./Home.css";
 
 const Home = () => {
@@ -32,6 +34,11 @@ const Home = () => {
           <CardContainer/> 
           <Aim/> 
         </div>
+        <div className="row" style={{ gap : "200px"}}>
+        <Modal/>
+        <Zhuti/>
+        </div>
+
       
       </section>
     </>

@@ -1,12 +1,12 @@
 import Alert from "./components/Alert";
 import ListGroup from "./components/ListGroup";
-import './App.css';
 import Home from "./components/home/Home";
 import Pages from "./components/pages/Pages";
 import Header from "./components/common/Header";
 import cardContainer from "./components/home/card-container";
 import Aim from "./components/home/aim";
 import JiuJiu from "./components/home/jiujiu";
+import Modal from "./components/Modal/Modal";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -35,7 +35,7 @@ const handleSelectItem = (item: string) => {
     <Router>
       <Header/>
       <Routes>
-      <Route path="/" Component={JiuJiu}></Route>
+      <Route path="/" Component={Home}></Route>
       </Routes>
     </Router>
     

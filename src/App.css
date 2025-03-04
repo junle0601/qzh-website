@@ -8,10 +8,20 @@
     --black: #000;
     --silver: #bac8d3
 }
+
+/* Fonts */
+
+@font-face {
+    font-family: 'XinWeiTi';
+    src: url('/public/fonts/WenYue-ZHJXinWeiTi-GBK-2.otf') format('truetype');
+}
+
+
+
 body{
     background-color: var(--headingColor); 
     color: var(--white);
-    font-family: "Poppins", sans-serif;
+    font-family: "XinWeiTi", sans-serif;
 }
 
 
@@ -53,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----------------header ----------------- */
 header {
-    height: 10vh;
+    height: 0px;
     line-height: 10vh;
     position: sticky;
     top: 0;
@@ -82,3 +92,4 @@ header a {
     align-items: center;
 
 }
+

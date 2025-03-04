@@ -1,0 +1,29 @@
+.zhuti-img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    object-fit: contain;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    filter: drop-shadow(30px 30px 0 rgba(0, 0, 0, 0.3));
+}
+
+.image-wrapper-zhuti {
+    text-align: center;
+    padding: 20px;
+}
+
+.zhuti-img:hover {
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zhuti-text {
+    font-size: 40px;
+}

@@ -4,8 +4,7 @@
     display: block;
     object-fit: contain;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-
+    filter: drop-shadow(30px 30px 0 rgba(0, 0, 0, 0.3));
 }
 
 .image-wrapper {
@@ -14,7 +13,17 @@
 }
 
 .jiujiu-img:hover {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     cursor: pointer;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jiujiu-text {
+    font-size: 40px;
 }

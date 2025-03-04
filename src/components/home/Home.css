@@ -11,13 +11,18 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../src/assets/18筹委合照.png");
-    background-size: cover;
-    background-attachment: fixed;
+
     opacity: 0.2;
     z-index: -1;
 }
 
+
+html body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
 
 /* ----------------Home ----------------- */
 
@@ -51,9 +56,11 @@ button {
 }
 .hero{
     position: relative;
-    height: 90vh;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .hero::after {
@@ -63,11 +70,16 @@ button {
     left: 0;
     background-image: url("../src/assets/18筹委合照.png");
     background-size: cover;
-    background-attachment: fixed;
-    z-index: -1;
+    z-index: -2;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     opacity: 0.4;
+    overflow-x: hidden;
+
+     /* Add gradient overlay */
+     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    
 }
 
 .heroContainer {
@@ -100,34 +112,47 @@ button {
    display: flex;
    align-items: center;
    flex-direction: column; 
-   line-height: 1px;
-   gap: 5px;
+   line-height: 0.1px;
+   gap: 1px;
    text-align: center;
+   margin-bottom: -80px;
 }
 
 .title h1 {
     position: relative;
     display: inline-block;
-    font-size: 5vh;
+    font-size: 10vh;
 }
 
 .title h1::after {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: -24px;
+    bottom: -50px;
     width: 120%;
-    height: 2px;
+    height: 6px;
     background-color: white;
     transform: translateX(-50%);
 }
 
 .title h3 {
-    font-size: 1.2rem;
+    font-size: 4vh;
 }
 
 .card-container {
     background-image: url("/src/assets/IMG_7736.JPG");
     background-size: cover;
 }
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -80px;
+
+}
+
 /* ----------------Home ----------------- */
+
+
+
