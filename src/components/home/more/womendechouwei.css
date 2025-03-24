@@ -1,0 +1,83 @@
+.wrapper-womendechouwei {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.card-container-womendechouwei  {
+    position: relative;
+    color: #fff;
+    width: 1400px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px; 
+    transition: height 0.5s ease-in-out;
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-womendechouwei::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(102, 42, 192), rgb(81, 81, 81));
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.preview-text-womendechouwei {
+    position: absolute;
+    top: 55px;
+    left: 500px;
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 
+    2px 2px 0 grey;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+
+}
+
+.card-container-womendechouwei:hover {
+    height: 500px;
+}
+
+
+.card-container-womendechouwei:hover::before{
+    filter: brightness(0.3);
+    background-image: url("/src/assets/wmdcw.jpeg");
+    background-size:cover;
+    /* opacity: 0.5; */
+}
+
+.card-container-womendechouwei:hover .preview-text-womendechouwei{
+    transform: translateX(), translateY(-50px);
+}
+
+.text-wrapper-womendechouwei {
+    position: absolute;
+    width: 80%;
+    top: 200px;
+    left: 150px;
+    font-size: 20px;
+    line-height: 30px;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-container-womendechouwei:hover .text-wrapper-womendechouwei {
+    opacity: 1;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

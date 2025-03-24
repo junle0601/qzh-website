@@ -1,0 +1,82 @@
+.wrapper-womendeyingyuan {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.card-container-womendeyingyuan  {
+    position: relative;
+    color: #fff;
+    width: 1400px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px; 
+    transition: height 0.5s ease-in-out;
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-womendeyingyuan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(219, 158, 26), rgb(81, 81, 81));
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.preview-text-womendeyingyuan {
+    position: absolute;
+    top: 55px;
+    left: 500px;
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 
+    2px 2px 0 grey;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.card-container-womendeyingyuan:hover {
+    height: 500px;
+}
+
+
+.card-container-womendeyingyuan:hover::before{
+    filter: brightness(0.3);
+    background-image: url("/src/assets/wmdyy.jpeg");
+    background-size:cover;
+    /* opacity: 0.5; */
+}
+
+.card-container-womendeyingyuan:hover .preview-text-womendeyingyuan{
+    transform: translateX(), translateY(-50px);
+}
+
+.text-wrapper-womendeyingyuan {
+    position: absolute;
+    width: 80%;
+    top: 200px;
+    left: 150px;
+    font-size: 20px;
+    line-height: 30px;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-container-womendeyingyuan:hover .text-wrapper-womendeyingyuan {
+    opacity: 1;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

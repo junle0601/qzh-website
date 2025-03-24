@@ -1,6 +1,5 @@
 .wrapper {
-    width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +48,7 @@
 }
 
 .card-container:hover .preview-text{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
 }
 
 .text-wrapper {

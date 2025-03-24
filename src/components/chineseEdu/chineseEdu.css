@@ -1,0 +1,748 @@
+.background-chinese-edu {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, rgb(246, 202, 116) 0%, rgb(226, 208, 172) 40%, rgba(0, 0, 0, 1) 80%);
+
+    /* Apply mask to fade both top and bottom */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.background-chineseedu h1 {
+    animation: fadeInUp 0.8s ease-out forwards;
+    font-size: 70px;
+
+
+}
+
+.wrapper-chineseedu {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container-chineseedu  {
+    position: relative;
+    color: #fff;
+    width: 150px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-bottom: 120px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-chineseedu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/linhuangsheng.jpeg");
+    filter: saturate(0.1);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+/* .card-container-chineseedu:hover::before{
+    filter: brightness(0.5);
+    opacity: 0.8;
+} */
+
+.wrapper-chineseedu1 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container-chineseedu1  {
+    position: relative;
+    color: #fff;
+    width: 150px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 50px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+
+
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-chineseedu1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/shenmuyuu.jpg");
+    background-position: center;
+    filter: saturate(0.1);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+.card-container-chineseedu2  {
+    position: relative;
+    color: #fff;
+    width: 150px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 50px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+
+
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-chineseedu2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/linlianyu.jpg");
+    background-size: 150%;
+    background-position: center;
+    filter: saturate(0.1);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+.card-container-chineseedu3  {
+    position: relative;
+    color: #fff;
+    width: 150px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 120px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-chineseedu3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/motaixii.jpg");
+    background-size: 160%;
+    background-position: center;
+    filter: saturate(0.1);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+    
+}
+
+
+.card-container-chineseedu5  {
+    position: relative;
+    color: #fff;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 50px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+
+
+    
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-chineseedu5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/diandeng2.jpeg");
+    background-size: 120%;
+    background-position: center;
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+
+    
+}
+
+
+
+.background-chineseedu {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    height: 50vh; /* Ensure it takes up space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Make text visible */
+    margin-top: -100px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.empty-space {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) );
+
+}
+
+.background-chinese-edu:hover .card-container-chineseedu::before,
+.background-chinese-edu:hover .card-container-chineseedu1::before,
+.background-chinese-edu:hover .card-container-chineseedu5::before,
+.background-chinese-edu:hover .card-container-chineseedu2::before,
+.background-chinese-edu:hover .card-container-chineseedu3::before
+{
+    opacity: 0.6;
+    filter: blur(2px) saturate(0.1);
+    
+}
+
+.background-chinese-edu:hover .preview-text-chineseedu
+{
+    opacity: 1;
+
+}
+
+.preview-text-chineseedu {
+    opacity: 0;
+    z-index: 99;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 40px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.huajiaodoushi {
+    font-size: 70px;
+    margin-left: 170px;
+    margin-top: 100px;
+}
+
+.card-container-linhuangsheng {
+    position: relative;
+    color: #fff;
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-right: 50px;
+    margin-bottom: 120px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-container-linhuangsheng::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/shenmuyuu.jpg");
+    background-position: center;
+    background-size: 160%;
+    filter: saturate(0.1);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.card-container-linhuangsheng:hover::before {
+    filter: saturate(1);
+    opacity: 1;
+
+}
+
+.card-container-linhuangsheng:hover .shenmuyu {
+    opacity: 1;
+}
+
+.shenmuyu {
+    opacity: 0;
+    position: absolute;
+    writing-mode: vertical-lr;
+    letter-spacing: 20px;
+    text-orientation: upright;
+    font-size: 90px;
+    top: 20%;
+    left: 30%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.card-container-shenmuyu {
+    position: relative;
+    color: #fff;
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 170px;
+    margin-right: 50px;
+    margin-bottom: 120px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-container-shenmuyu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/linhuangsheng.jpeg");
+    background-position: 20px;
+    background-size: 200%;
+    filter: saturate(0.1);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+
+.card-container-shenmuyu:hover::before {
+    filter: saturate(1);
+    opacity: 1;
+
+}
+
+.card-container-shenmuyu:hover .linhuangsheng {
+    opacity: 1;
+}
+
+
+.card-container-shenmuyu:hover .linshuangsheng {
+    opacity: 1;
+}
+
+.linhuangsheng {
+    opacity: 0;
+    position: absolute;
+    writing-mode: vertical-lr;
+    letter-spacing: 20px;
+    text-orientation: upright;
+    font-size: 90px;
+    top: 20%;
+    left: 30%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/*  */
+
+.card-container-linlianyu {
+    position: relative;
+    color: #fff;
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 170px;
+    margin-right: 50px;
+    margin-bottom: 120px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-container-linlianyu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/linlianyuu.jpg");
+    background-position: center;
+    background-size: 200%;
+    filter: saturate(0.1);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+
+.card-container-linlianyu:hover::before {
+    filter: saturate(1);
+    opacity: 1;
+
+}
+
+.card-container-linlianyu:hover .linlianyu {
+    opacity: 1;
+}
+
+
+.linlianyu {
+    opacity: 0;
+    position: absolute;
+    writing-mode: vertical-lr;
+    letter-spacing: 20px;
+    text-orientation: upright;
+    font-size: 90px;
+    top: 20%;
+    left: 30%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card-container-motaixi {
+    position: relative;
+    color: #fff;
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 170px;
+    margin-bottom: 120px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-container-motaixi::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/motaixii.jpg");
+    background-position: center;
+    background-size: 200%;
+    filter: saturate(0.1);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+
+.card-container-motaixi:hover::before {
+    filter: saturate(1);
+    opacity: 1;
+
+}
+
+.card-container-motaixi:hover .motaixi {
+    opacity: 1;
+}
+
+
+.motaixi {
+    opacity: 0;
+    position: absolute;
+    writing-mode: vertical-lr;
+    letter-spacing: 20px;
+    text-orientation: upright;
+    font-size: 90px;
+    top: 20%;
+    left: 30%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.huajiaodoushi-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.huajiaogushi-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.huajiaogushi-background1::before {
+    content: "";
+    background-image:  url("../src/assets/chineseedu/diandengggg.jpeg");
+    background-position:10px;
+    content: "";
+    position: absolute;
+    top: -20;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(2px);
+    mix-blend-mode: overlay;
+}
+
+.huajiaogushi-background {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+
+
+
+/* -----------huajiaogushi------------- */
+
+
+.card-container-huajiaogushi1 {
+    position: relative;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-container-huajiaogushi1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/茅草行动.webp");
+    background-position: center;
+    background-size: 120%;
+    filter: brightness(0.4);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+.card-container-huajiaogushi1:hover {
+    transform: scale(1.3);
+}
+
+.card-container-huajiaogushi1:hover::before {
+    filter: brightness(1);
+    opacity: 1;
+
+}
+
+.card-container-huajiaogushi1:hover .huajiaogushi1 {
+    opacity: 1;
+}
+
+
+.huajiaogushi1 {
+    opacity: 1;
+    position: absolute;
+    text-orientation: upright;
+    font-size: 55px;
+    letter-spacing: 5px;
+    line-height: 60px;
+    top: 20%;
+    left: 23%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* -------huajiaogushi2 ------------- */
+
+
+.card-container-huajiaogushi2 {
+    position: relative;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 170px;
+    margin-bottom: 120px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-container-huajiaogushi2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/baixiao.jpeg");
+    background-position: center;
+    background-size: 145%;
+    filter: brightness(0.4);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+.card-container-huajiaogushi2:hover {
+    transform: scale(1.3);
+}
+
+.card-container-huajiaogushi2:hover::before {
+    filter: brightness(1);
+    opacity: 1;
+
+}
+
+.card-container-huajiaogushi2:hover .huajiaogushi2 {
+    opacity: 1;
+}
+
+
+.huajiaogushi2 {
+    opacity: 1;
+    position: absolute;
+    text-orientation: upright;
+    font-size: 55px;
+    letter-spacing: 5px;
+    line-height: 60px;
+    top: 20%;
+    left: 23%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
+}
+
+/*  -----------huajiaogushi3 ----------- */
+
+
+.card-container-huajiaogushi3 {
+    position: relative;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 170px;
+    margin-bottom: 120px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-container-huajiaogushi3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/duda.jpeg");
+    background-position: center;
+    background-size: 145%;
+    filter: brightness(0.4);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+.card-container-huajiaogushi3:hover {
+    transform: scale(1.3);
+}
+
+.card-container-huajiaogushi3:hover::before {
+    filter: brightness(1);
+    opacity: 1;
+
+}
+
+.card-container-huajiaogushi3:hover .huajiaogushi3 {
+    opacity: 1;
+}
+
+
+.huajiaogushi3 {
+    opacity: 1;
+    position: absolute;
+    text-orientation: upright;
+    font-size: 55px;
+    letter-spacing: 5px;
+    line-height: 60px;
+    top: 20%;
+    left: 23%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* ----------huajiaogushi4 -------- */
+
+
+.card-container-huajiaogushi4 {
+    position: relative;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 170px;
+    margin-bottom: 120px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-container-huajiaogushi4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/chineseedu/zhongxue.png");
+    background-position: center;
+    background-size: 145%;
+    filter: brightness(0.4);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+.card-container-huajiaogushi4:hover {
+    transform: scale(1.3);
+}
+
+.card-container-huajiaogushi4:hover::before {
+    filter: brightness(1);
+    opacity: 1;
+
+}
+
+.card-container-huajiaogushi4:hover .huajiaogushi4 {
+    opacity: 1;
+}
+
+
+.huajiaogushi4 {
+    opacity: 1;
+    position: absolute;
+    text-orientation: upright;
+    font-size: 30px;
+    letter-spacing: 5px;
+    line-height: 60px;
+    top: 20%;
+    left: 23%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
+}

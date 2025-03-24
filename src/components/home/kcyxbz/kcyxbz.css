@@ -1,0 +1,32 @@
+.row-kcyxbz {
+    position: absolute;
+    font-size: 80px;
+    color: #fff;
+}
+
+.card-container-kcyxbz {
+    color: #fff;
+    width: 600px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px ridge purple;
+}
+
+.wrapper-kcyxbz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    gap: 150px !important;
+    justify-content: space-between;
+}

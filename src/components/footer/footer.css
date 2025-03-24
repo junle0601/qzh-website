@@ -1,0 +1,39 @@
+.background-footer {
+    background: linear-gradient( rgba(0, 0, 0, 0.8),rgba(35, 93, 238, 0.297), rgba(76, 101, 242, 0.337));
+    height: 50vh;
+    weight: 100%;
+    margin-top: 100px;
+    /* position: relative; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-footer h2 {
+    margin-left: 200px;
+    margin-top: -10px;
+}
+
+.jiujiu-img-footer {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-left: 200px;
+    /* position: absolute;
+    top: 10px;
+    left: 150px; */
+}
+
+.vertical-line {
+    width: 3px;
+    height: 85%;
+    background-color: white;
+    margin: 0 100px;
+}

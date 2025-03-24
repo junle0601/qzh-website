@@ -1,0 +1,83 @@
+.wrapper-quanguoxunhui {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.card-container-quanguoxunhui  {
+    position: relative;
+    color: #fff;
+    width: 1400px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px; 
+    transition: height 0.5s ease-in-out;
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-quanguoxunhui::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(229, 57, 57), rgb(81, 81, 81));
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.preview-text-quanguoxunhui {
+    position: absolute;
+    top: 55px;
+    left: 450px;
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 
+    2px 2px 0 grey;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+
+}
+
+.card-container-quanguoxunhui:hover {
+    height: 500px;
+}
+
+
+.card-container-quanguoxunhui:hover::before{
+    filter: brightness(0.3);
+    background-image: url("/src/assets/qgxh.jpeg");
+    background-size:cover;
+    /* opacity: 0.5; */
+}
+
+.card-container-quanguoxunhui:hover .preview-text-quanguoxunhui{
+    transform: translateX(), translateY(-50px);
+}
+
+.text-wrapper-quanguoxunhui {
+    position: absolute;
+    width: 80%;
+    top: 200px;
+    left: 150px;
+    font-size: 20px;
+    line-height: 30px;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-container-quanguoxunhui:hover .text-wrapper-quanguoxunhui {
+    opacity: 1;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

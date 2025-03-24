@@ -1,0 +1,201 @@
+.background-enquiry {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+    height: 50vh; /* Ensure it takes up space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Make text visible */
+    margin-top: -100px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.background-enquiry h1 {
+    animation: fadeInUp 0.8s ease-out forwards;
+    font-size: 70px;
+}
+
+.row-enquiry {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Add spacing between elements */
+}
+
+.register-title {
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-right: 1400px;
+}
+
+.wrapper-enquiry {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.card-container-enquiry  {
+    position: relative;
+    color: #fff;
+    width: 1400px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 20px; 
+    transition: height 0.5s ease-in-out;
+}
+
+.card-container-answer {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none;
+    position: relative;
+    color: #fff;
+    margin-top: -28px;
+    width: 1400px;
+    height: 70px;
+    overflow: hidden;
+        border: 1px solid white;
+        border-radius: 20px;
+
+}
+
+
+.card-container-answer.show  {
+ 
+    transition: height 0.5s ease-in-out;
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+
+
+.card-container-enquiry-1  {
+    position: relative;
+    color: #fff;
+    width: 1400px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 20px; 
+    transition: height 0.5s ease-in-out;
+}
+
+.card-container-enquiry-2  {
+    position: relative;
+    color: #fff;
+    width: 1400px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 20px; 
+    transition: height 0.5s ease-in-out;
+}
+
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-enquiry::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(87, 111, 205), rgb(21, 78, 200));
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.card-container-answer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.card-container-enquiry-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(185, 87, 205), rgb(200, 21, 200));
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.card-container-enquiry-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(87, 205, 99), rgb(24, 200, 21));
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.preview-text-enquiry {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 
+    2px 2px 0 grey;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.preview-text-answer {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 
+    2px 2px 0 grey;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+
+.column-enquiry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-enquiry {
+    justify-content: center;
+    position: relative;
+    top: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(12, 23, 88, 0.337),rgba(10, 45, 133, 0.297),rgba(0, 0, 0, 0.8));
+         /* Add gradient overlay */
+         mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%);
+         /* -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%); */
+    margin-bottom: -100px;
+    margin-top: -28px;
+
+}
+
+.plus{
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

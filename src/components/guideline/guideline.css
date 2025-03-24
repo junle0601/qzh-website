@@ -1,0 +1,139 @@
+.background-guideline h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 90px;
+    animation: fadeInUp 0.8s ease-out forwards;
+
+}
+
+.background-guideline {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%);
+    height: 50vh; /* Ensure it takes up space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Make text visible */
+    margin-top: -100px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+
+.title-guideline {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 50px;
+}
+
+
+.title-guideline::after {
+    content: "";
+    position: absolute;
+    left: 90%;
+    bottom: -20px;
+    width: 190%;
+    height: 2px;
+    background-color: white;
+    transform: translateX(-50%);
+}
+.content-guideline {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+}
+
+.card-container-guideline {
+    max-width: 600px;
+    width: 90%;
+    min-height: 200px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    padding: 200px;
+    
+
+    position: relative;
+    border-radius: 20px;
+
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.2), 
+                    0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.baomingzhinan1 {
+    width: 900px;
+    height: 400px;
+    display: block;
+    object-fit: contain;
+
+}
+.baomingzhinan2 {
+    width: 400px;
+    height: 200px;
+    display: block;
+    object-fit: contain;
+    padding-right: 30px;
+
+}
+.baomingzhinan3 {
+    width: 500px;
+    height: 300px;
+    display: block;
+    object-fit: contain;
+
+}
+
+.baoming {
+    position: absolute;
+    top: 650px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+}
+
+.content-guideline2 {
+    position: absolute;
+    top: 550px;
+    left: 300px;
+}
+.content-guideline3 {
+    position: absolute;
+    top: 580px;
+    left: 340px;
+}
+.content-guideline4 {
+    position: absolute;
+    top: 610px;
+    left: 340px;
+}
+
+.circle {
+    border-radius: 80px;
+    background-color: rgb(11, 11, 57);
+    /* background: linear-gradient(rgba(59, 42, 240, 0.297), rgba(76, 101, 242, 0.337), rgba(0, 0, 0, 0.8)); */
+    width: 100px;
+    height: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 1px 1px 0;
+    border: 1px solid white;
+}
+
+.background-guideline1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.8),rgba(35, 93, 238, 0.297), rgba(76, 101, 242, 0.337),rgba(0, 0, 0, 0.8));
+
+    /* Add gradient overlay */
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%);
+    /* -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%); */
+margin-bottom: -100px;
+}

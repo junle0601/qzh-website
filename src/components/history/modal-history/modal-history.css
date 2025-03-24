@@ -1,0 +1,343 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal-history.show {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+
+}
+
+.modal-history {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(49, 49, 49, 0.8);
+    z-index: 999;
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: linear-gradient(135deg, rgba(9, 25, 97, 0.8), rgba(0, 0, 0, 0.7));
+    padding: 14px 28px;
+    border-radius: 20px;
+    max-width: 600px;
+    min-width: 300px;
+
+
+}
+.modal-content2004 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow-y: auto;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: linear-gradient(135deg, rgba(9, 25, 97, 0.8), rgba(0, 0, 0, 0.7));
+    padding: 14px 28px;
+    border-radius: 20px;
+    width: 1000px;
+    height: 600px;
+
+
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    background-color: transparent;
+}
+
+.content-history {
+   color: white; 
+   text-align: center;
+   line-height: 30px;
+   font-size: 20px;
+   font-weight: 5px;
+   padding-bottom: 50px;
+
+}
+
+/* content2004 */
+.bulletpoint {
+    display: inline;
+    padding-right: 5px;
+    font-size: 25px;
+}
+
+
+.content2004-history1 {
+    color: white; 
+    text-align: start;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 5px;
+    display: inline;
+    padding-right: 20px;
+ 
+ }
+
+.content2004-history2 {
+    color: rgb(117, 255, 24); 
+    text-align: start;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 5px;
+    padding-bottom: 10px;
+    display: inline;
+    padding-right: 20px;
+ 
+ }
+
+ .content2004-history3 {
+    color: white; 
+    text-align: start;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 5px;
+    display: block;
+    padding-right: 20px;
+    padding-top: 100px;
+ 
+ }
+
+ .content2004-history4 {
+    color: white; 
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 5px;
+    display: block;
+    padding-right: 20px;
+    padding-top: 50px;
+ 
+ }
+
+ .title2004-history1 {
+    color: rgb(145, 144, 144);
+    position: absolute;
+    top: 280px;
+    font-size: 28px;
+}
+
+.title2004-history2 {
+    color: rgb(145, 144, 144);
+
+    position: absolute;
+    top: 600px;
+    font-size: 28px;
+}
+.title2004-history3 {
+    color: white;
+    position: absolute;
+    top: 990px;
+    left: 140px;
+    font-size: 25px;
+}
+
+
+.qzh1Img {
+    position: absolute;
+    top: 70px;
+    right: 280px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.qzh1ChouWei {
+    position: absolute;
+    top: 650px;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+
+}
+
+
+.dingWei {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+
+ /* content2004 */
+
+ /* content2005 */
+ .content2005-history4 {
+    color: white; 
+    text-align: start;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 5px;
+    display: block;
+    padding-right: 20px;
+ }
+
+ .content2005-history5 {
+    color: white; 
+    text-align: start;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 5px;
+    display: block;
+    padding-right: 20px;
+    padding-top: 90px;
+ }
+
+
+ .title2005-history2 {
+    color: rgb(145, 144, 144);
+    position: absolute;
+    top: 430px;
+    font-size: 28px;
+}
+
+.title2005-history3 {
+    color: white;
+    position: absolute;
+    top: 980px;
+    font-size: 28px;
+    left: 100px;
+}
+
+.zongYingHui {
+    position: absolute;
+    top: 460px;
+    left: 500px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.zongYingHui2 {
+    position: absolute;
+    top: 460px;
+    left: 600px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+ /* content 2005 */
+
+
+  /* content 2008 */
+
+  .qzh3Img {
+    position: absolute;
+    top: 3px;
+    right: 50px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.title2008-history1 {
+    color: rgb(145, 144, 144);
+    position: absolute;
+    top: 240px;
+    font-size: 28px;
+}
+
+.content2008-history6 {
+    color: white; 
+    text-align: start;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 5px;
+    display: block;
+    padding-right: 20px;
+ }
+
+
+
+
+ /* content 2008 */
+
+.title-history {
+    color: white;
+    position: absolute;
+    margin-top: 50px;
+
+}
+
+.title2-history {
+    color: white;
+    position: absolute;
+    top: 100px;
+    font-size: 28px;
+}
+
+.year-history {
+    font-size: 30px;
+    padding-right: 500px;
+    padding-bottom: 50px;
+
+}
+
+.titles-history {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+
+

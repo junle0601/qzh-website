@@ -1,0 +1,69 @@
+.wrapper-contact {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container-contact  {
+    position: relative;
+    color: #fff;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 40px;
+    border: 4px solid black;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out
+}
+
+/* add a dark overlay for hovering effect using ::before */
+.card-container-contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-image: url("/src/assets/IMG_7736.JPG");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6) blur(0);
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+    
+}
+
+.preview-text-contact {
+    position: absolute;
+    top: 30%;
+    left: 31%;
+    padding: 30px;
+    font-size: 70px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.card-container-contact:hover::before{
+    filter: brightness(1) blur(5px);
+    cursor: pointer;
+    /* opacity: 0.5; */
+}
+
+.card-container-contact:hover{
+  width: 520px;
+  height: 420px;
+}
+
+
+.card-container-contact:hover .preview-text-contact{
+    transform: scale(1.5);
+    color: black;
+    text-shadow: 
+    -2px -2px 0 white,
+    2px -2px 0 white,
+    02px 2px 0 white,
+    2px 2px 0 white;
+}
+
